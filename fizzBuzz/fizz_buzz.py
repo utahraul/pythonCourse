@@ -1,5 +1,5 @@
 def fizzBuzz():
-    listOfNumbers = [1,2]
+    listOfNumbers = []
     for number in range(1, 100):
         if ((number % 3 == 0) and (number % 5 == 0)):
             listOfNumbers.append('fizzBuzz')
@@ -7,6 +7,8 @@ def fizzBuzz():
             listOfNumbers.append('fizz')
         elif (number % 5 == 0):
             listOfNumbers.append('Buzz')
+        else:
+            listOfNumbers.append(number)
     return listOfNumbers
 
 print(fizzBuzz())
