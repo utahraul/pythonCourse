@@ -26,7 +26,7 @@ while (userNumber != randomNumberToGuess):
     if userNumber < randomNumberToGuess:
         print ("El número que buscamos es mayor que " + str(userNumber))
     tries = tries + 1
-    if tries == maxNumberOfTries:
+    if tries == maxNumberOfTries and userNumber != randomNumberToGuess:
         print("Has agotado los " + str(maxNumberOfTries) + " intentos")
         break
 
