@@ -14,7 +14,7 @@ userNumber = None
 tries = 0
 maxNumberOfTries = 5
 
-print ("He generado un número entre 1 y 50. Adivínalo!")
+print ("He generado un número entre 1 y 50. Tienes " + str(maxNumberOfTries) + " oportunidades para acertarlo. Adivínalo!")
 
 while (userNumber != randomNumberToGuess):
     userNumber = int(input("Introduce un número entre 1 y 50: "))
